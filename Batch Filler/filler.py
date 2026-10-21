@@ -95,7 +95,7 @@ def generate_ebay_csv():
         return
 
     header_lines = []
-    with open(TEMPLATE_CSV, 'r', encoding='utf-8') as f:
+    with open(TEMPLATE_CSV, 'r', encoding='utf-8-sig') as f:
         for _ in range(4):
             header_lines.append(f.readline())
         columns_line = f.readline()
